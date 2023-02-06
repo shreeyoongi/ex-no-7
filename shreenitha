@@ -1,0 +1,178 @@
+list in library :
+#adding
+list=[]
+list.append('books')
+print(list)
+print(' ')
+list.extend(['manuscripts','newspaper','cd','audiofile'])
+print(list)
+print(' ')
+list.insert(3,'document')
+print(list)
+print(' ')
+#indexing
+print(list[4])
+print(' ')
+#slicing
+print(list[0:3])
+print(' ')
+
+#concodination
+print(list)
+print(' ')
+
+list1=['videotape','datsabase']
+print([list+list1])
+#removing
+list.remove('cd')
+print(list)
+print(' ')
+list.pop(4)
+print(list)
+print(' ')
+output :
+['books']
+ 
+['books', 'manuscripts', 'newspaper', 'cd', 'audiofile']
+ 
+['books', 'manuscripts', 'newspaper', 'document', 'cd', 'audiofile']
+ 
+cd
+ 
+['books', 'manuscripts', 'newspaper']
+ 
+['books', 'manuscripts', 'newspaper', 'document', 'cd', 'audiofile']
+ 
+[['books', 'manuscripts', 'newspaper', 'document', 'cd', 'audiofile', 'videotape', 'datsabase']]
+['books', 'manuscripts', 'newspaper', 'document', 'audiofile']
+ 
+['books', 'manuscripts', 'newspaper', 'document']
+ tuple 
+#appending using'+'operator
+tuple1=("engine","brakes","steering")
+tuple1=tuple1+("front axle",["rear axle","transmission system"])
+print(tuple1)
+print(" ")
+                                                      
+#changing the elements of tuple
+tuple1[-1][1]="battery"
+print(tuple1)
+print(" ")
+
+#indexing
+print(tuple1[2])
+print(tuple1[-2])
+print(" ")
+
+#slicing
+print(tuple1[0:3])
+print(tuple1[1:])
+print(" ")
+
+#concatenation
+print(tuple1)
+tuple2=("mirrors","fuel injector","seats")
+totaltuple=tuple1+tuple2
+print(totaltuple)
+print(" ")
+
+#repetition
+print(("mirrors,")*3)
+output :
+('engine', 'brakes', 'steering', 'front axle', ['rear axle', 'transmission system'])
+ 
+('engine', 'brakes', 'steering', 'front axle', ['rear axle', 'battery'])
+ 
+steering
+front axle
+ 
+('engine', 'brakes', 'steering')
+('brakes', 'steering', 'front axle', ['rear axle', 'battery'])
+ 
+('engine', 'brakes', 'steering', 'front axle', ['rear axle', 'battery'])
+('engine', 'brakes', 'steering', 'front axle', ['rear axle', 'battery'], 'mirrors', 'fuel injector', 'seats')
+ 
+mirrors,mirrors,mirrors
+set :
+list=[]
+for i in range(0,5):
+    list.append(i)
+    list.append(4)
+    list.append(5)
+print("created list which contains duplicate elements:",list)
+x=set(list)
+print("after creating set removes duplicate elements:",x)
+output :
+created list which contains duplicate elements: [0, 4, 5, 1, 4, 5, 2, 4, 5, 3, 4, 5, 4, 4, 5]
+after creating set removes duplicate elements: {0, 1, 2, 3, 4, 5}
+dictinorary :
+dict1={"devicename":"HP","installed RAM":"64.0 GB"}
+print(dict1)
+print(" ")
+
+dict1["devicename"]="lenevo"
+print(dict1)
+print(" ")
+
+dict1["pen"]="available"
+print(dict1)
+print(" ")
+
+print(dict1["devicename"])
+print(" ")
+
+print(dict1.get("installed RAM"))
+print(" ")
+
+x=dict1.keys()
+print(x)
+print(" ")
+
+x=dict1.values()
+print(x)
+print(" ")
+
+x=dict1.items()
+print(x)
+print(" ")
+
+dict1.update({"devicename":"apple"})
+print(dict1)
+print(" ")
+
+dict1.pop("pen")
+print(dict1)
+print(" ")
+
+dict1.popitem()
+print(dict1)
+output :
+{'devicename': 'HP', 'installed RAM': '64.0 GB'}
+ 
+{'devicename': 'lenevo', 'installed RAM': '64.0 GB'}
+ 
+{'devicename': 'lenevo', 'installed RAM': '64.0 GB', 'pen': 'available'}
+ 
+lenevo
+ 
+64.0 GB
+ 
+dict_keys(['devicename', 'installed RAM', 'pen'])
+ 
+dict_values(['lenevo', '64.0 GB', 'available'])
+ 
+dict_items([('devicename', 'lenevo'), ('installed RAM', '64.0 GB'), ('pen', 'available')])
+ 
+{'devicename': 'apple', 'installed RAM': '64.0 GB', 'pen': 'available'}
+ 
+{'devicename': 'apple', 'installed RAM': '64.0 GB'}
+ 
+{'devicename': 'apple'}
+
+
+
+
+
+
+
+
